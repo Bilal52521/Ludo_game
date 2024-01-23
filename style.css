@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EB3349;
+    background: -webkit-linear-gradient(#F45C43, #EB3349);
+    background: linear-gradient(to right, #F45C43, #EB3349);
+}
+
+.container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 10px;
+    height: 500px;
+    width: 40%;
+    position: relative;
+    justify-content: center;
+}
+
+#player-1 {
+    background-color: #e87171;
+    border-radius: 5px 0px 0px 5px;
+    color: #fff;
+}
+
+#player-2 {
+    background: #f8a2a5;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+}
+
+img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background: #ccc;
+}
+
+button.roll {
+    top: 27rem;
+}
+
+button.hold {
+    top: 30rem;
+}
+
+.player div {
+    background: #EB3349;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    color: #ccc;
+    margin-top: 35%;
+}
+
+.score-p {
+    font-size: 30px;
+    padding: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .player {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    button.roll,
+    button.hold {
+        top: 2rem;
+    }
+}
